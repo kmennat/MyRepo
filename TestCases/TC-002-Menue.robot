@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource   ../Resources/LoginKeywords.robot
+Resource   ../Resources/Keywords.robot
 
 *** Variables ***
 ${Browser_chrome}    chrome
@@ -9,10 +9,13 @@ ${username}        j.doe
 ${password}        Password1#
 
 *** Test Cases ***
-TC-001-Login
+TC-002-menue
     [tags]  Login
     [Documentation]      First Test for LAP in IRIS Project
     Open My Browser     ${URL}     ${Browser_chrome}    
     Login central server    ${username}        ${password}
-   
+    sleep      5
+    
+    
+       
        

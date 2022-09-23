@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource   ../Resources/LoginKeywords.robot
+Resource   ../Resources/Keywords.robot
 
 *** Variables ***
 ${Browser_chrome}    chrome

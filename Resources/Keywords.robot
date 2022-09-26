@@ -18,3 +18,14 @@ Open Browser and Login
     
 Close My Browser
     Close Browser
+    
+Edit PatientDetails
+    [Arguments]        ${F_name}        ${L_name}
+    Click Element        ${PatientDetails}
+    sleep    2
+    Input Text    ${Firstname}    ${F_name}
+    sleep    2
+    Input Text    ${Lastname}    ${L_name}
+    sleep    2
+    Click Element  ${btn_save}
+    

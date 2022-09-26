@@ -11,19 +11,11 @@ ${URL}        https://nb-0447:444/
 ${username}        j.doe
 ${password}        Password1#
 ${F_name}             Breast1  
-${L_name}        TEST     
+${L_name}        TEST1    
 
 *** Test Cases ***
-TC-001-Login
-    [tags]  Login
-    [Documentation]      First Test for LAP in IRIS Project
-    sleep    5
-    Click Element  ${EditPatient}
-    sleep    5
-    Input Text    ${Firstname}    ${F_name}
-    sleep    3
-    Input Text    ${Lastname}    ${L_name}
-    sleep    3
-    Click Element  ${btn_save}
-    Log To Console    Test ist fertig
-    sleep    5
+TC-002 Edit Patien
+    [tags]  Patient Data
+    [Documentation]      TA for LAP in IRIS Project
+    Edit PatientDetails   ${F_name}    ${L_name}
+    

@@ -1,0 +1,17 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.TC-001-Login                                                        
+==============================================================================
+TC-001-Login :: First Test for LAP in IRIS Project                    Test ist fertig
+| PASS |
+------------------------------------------------------------------------------
+TestCases.TC-001-Login                                                | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+TestCases                                                             | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\k.mennat_extern\eclipse\LAP-eclipse\workspace\LAP-IRIS-TA\pabot_results\0\output.xml

@@ -2,18 +2,19 @@
 Library           SeleniumLibrary
 Variables        ../PageObjects/Locators.py
 
+
 *** Keywords ***
-Open My Browser
-    [Arguments]        ${Url}    ${Browser}
-    Open Browser    ${Url}    ${Browser}
+Open Browser and Login
+    #[Arguments]        ${Url}    ${Browser}
+    #Open Browser    ${Url}    ${Browser}
+    Open Browser    https://nb-0447:444/    chrome
     Maximize Browser Window
-    
-Login central server
-    [Arguments]        ${username}        ${password}
-    Input Text    ${txt_loginUserName}    ${username}
-    Input Text    ${txt_loginPassword}    ${password}
+    Input Text    ${txt_loginUserName}    j.doe
+    Input Text    ${txt_loginPassword}    Password1#
     Click Element  ${btn_signIn}
     Title Should Be    CentralServer
     Element Should Be Visible  ${pruefen}  timeout=30
     sleep    30
-    Close Browser    
+    
+Close My Browser
+    Close Browser
